@@ -1,0 +1,149 @@
+<!doctype html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+	<head>
+		<title> P1 - cadastro </title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+		<link rel="stylesheet" type="text/css" href="css/menu-style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/pag-seguro.css">
+		<!-- JS -->
+		<!-- <script language="javascript" src="jquery-3.6.0.min.js"></script> -->
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/carrossel.js"></script>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/731737791f.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid p-0">
+			<!----MENU-->
+			<header id="topo" class="navbar fixed-top navbar-dark bg-dark"></header>
+			<nav id="menu" class="navbar fixed-top navbar-light bg-light">
+				<a id="log" href="P1 - login.html"><img src="login.png" width="20" /></a>
+				<div id="logo">
+					<a href="P1 - vitrine.html"><img src="logo.png" width="55" /></a>
+				</div>
+				<div id="busca">
+					<input type="text" name="search" class="txtBusca" placeholder="Buscar..." />
+					<a href="P1 - busca.html"><img src="lupa.png" width="25" /></a>
+				</div>
+				<a id="login" href="P1 - login.html"><img src="login.png" width="20" /></a>
+				<a id="carrinho" href="P1 - carrinho.html"><img src="carrinho.png" width="20" /></a>
+				<div id="busc">
+					<input type="text" name="search" class="txtBusca" placeholder="Buscar..." />
+					<a href="P1 - busca.html"><img src="lupa.png" width="20" /></a>
+				</div>
+			</nav>
+			<!----CORPO-->
+			<section>
+				<form method="post">
+					<h1> CADASTRE-SE</h1>
+					<br>
+					<input type="text" id="nome" size="55" maxlength="50" placeholder="Nome" required />
+					<input type="text" id="cpf" size="55" placeholder="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF no formato: xxx.xxx.xxx-xx" required>
+					<input type="text" id="telefone" size="55" maxlength="50" placeholder="Telefone" required pattern="[0-9]{2} [0-9]{4}-[0-9]{4}" title="Digite o telefone no formato: DDD 0000-0000" />
+					<input type="email" id="email" size="55" maxlength="50" placeholder="Endereço de e-mail" required />
+					<input type="password" id="senha" size="55" placeholder="Senha" required />
+					<input type="password" id="senha2" size="55" placeholder="Confirme a senha" required />
+					<a href="P1 - login.html"><button id="enviar">CADASTRAR</button></a>
+				</form>
+			</section>
+			<!----RODAPE-->
+			<footer>
+				<div class="container-fluid container-rodape footer-inner-space pt-5 mb-0 bg-dark">
+					<!-- <div class="container-fluid ms-0"> -->
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 col-sm-12 col-md-6 mb-4 mb-md-0">
+											<h5>Navegação</h5>
+											<ul class="list-group list-unstyled">
+												<li><a href="#">Home</a></li>
+												<li><a href="#">Contato</a></li>
+												<li><a href="#">Blog</a></li>
+												<li><a href="#">Login</a></li>
+											</ul>
+										</div>
+										<div class="col-12 col-sm-12 col-md-6 mb-4 mb-md-0">
+											<h5>Blog</h5>
+											<ul class="list-unstyled">
+												<li><a href="#">Os melhores animes de 2022</a></li>
+												<li><a href="#">Quem é mais forte Naruto ou Sasuke?</a></li>
+												<li><a href="#">AnimeFriends 2022</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 col-sm-12 col-md-6 mb-4 mb-md-0">
+											<h5>Contato</h5>
+											<ul class="list-group list-unstyled p-0 m-0">
+												<li><i class="fa-solid fa-envelope pe-2"></i><a href="#">contato@site.com.br</a></li>
+												<li><i class="fa-solid fa-phone-flip pe-2"></i><a href="#">(11) 0000-0000</a></li>
+												<li><i class="fa-solid fa-headphones pe-2"></i><a href="#">Fale Conosco</a></li>
+											</ul>
+											<br>
+										</div>
+										<div class="col-12 col-sm-12 col-md-6 mb-4 mb-md-0">
+											<h5>Redes Sociais</h5>
+											<ul class="list-unstyled">
+												<li><i class="fa-brands fa-facebook fa-2x"></i></li>
+												<li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
+												<li><i class="fa-brands fa-linkedin fa-2x"></i></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-12 mt-2">
+								<!-- <p><a href="#">Rua das Flores, São Paulo - SP, 00000-000</a></p> -->
+								<div class="border-top mt-3 mb-2"></div>
+							</div>
+							<div class="col-md-6">
+								<p class="text-white"><small>GEEK &copy; - 2022 | Todos os direitos reservados. CNPJ: 00.000.000/0000-00 Rua das Flores, São Paulo - SP, 00000-000 </small></p>
+							</div>
+							<div class="col-md-6">
+		
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
+<!-- <script lang="javascript">
+	function gravar(){
+	// ajax = asynchonous javascript and xml
+		$.ajax({
+			method: "POST",
+			url: "localhost:2020/cliente",
+			data:{nome: nome.value,
+				  cpf: cpf.value,
+				  telefone: telefone.value, 
+				  email: email.value,
+				  senha: senha.value }
+		})
+		.done(function(response){
+			console.log(response);
+			alert("cliente inserido com sucesso");
+		});
+	}    
+</script> -->

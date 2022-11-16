@@ -1,0 +1,39 @@
+section{
+	margin-top: 90px;
+}
+
+#catalogo{
+	display: inline-table;
+	padding: 4%;
+}
+
+.prod {
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	border: none;
+}
+
+.prod figcaption {
+	background-color: gray;
+	background-color: rgba(10,23,55,0.5);
+	position: absolute;
+	top: 25px;
+	right: 215px;
+	font-size: 20px;
+	color: black;
+}
+
+.imagem{
+	width: 98%;
+}
+
+footer{
+	color: white;
+}
+
+@media (max-width: 600px) {
+	section{
+		margin-top: 130px;
+	}
+}

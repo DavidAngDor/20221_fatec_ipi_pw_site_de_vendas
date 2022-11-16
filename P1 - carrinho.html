@@ -1,0 +1,533 @@
+<!doctype html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+	<head>
+		<title> P1 - carrinho </title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/carrinho.css">
+		<link rel="stylesheet" type="text/css" href="css/menu-style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/pag-seguro.css">
+		<!-- JS -->
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/carrossel.js"></script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/731737791f.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid p-0">
+			<!----MENU-->
+			<header id="topo" class="navbar fixed-top navbar-dark bg-dark"></header>
+			<nav id="menu" class="navbar fixed-top navbar-light bg-light">
+				<a id="log" href="P1 - login.html"><img src="login.png" width="20" /></a>
+				<div id="logo">
+					<a href="P1 - vitrine.html"><img src="logo.png" width="55" /></a>
+				</div>
+				<div id="busca">
+					<input type="text" name="search" class="txtBusca" placeholder="Buscar..." />
+					<a href="P1 - busca.html"><img src="lupa.png" width="25" /></a>
+				</div>
+				<a id="login" href="P1 - login.html"><img src="login.png" width="20" /></a>
+				<a id="carrinho" href="P1 - carrinho.html"><img src="carrinho.png" width="20" /></a>
+				<div id="busc">
+					<input type="text" name="search" class="txtBusca" placeholder="Buscar..." />
+					<a href="P1 - busca.html"><img src="lupa.png" width="20" /></a>
+				</div>
+			</nav>
+			<!----CORPO-->
+			<section id="compra" class="p-3">
+				<div class="row p-2">
+					</br></br>
+					<aside id="produtos" class="col-12 col-md-8 ps-4 pe-4">
+						<h2>SEU CARRINHO</h2>
+						<!-- </br> -->
+						<!-- <div>
+							<div class="item___1y8M_">
+								<div class="gl-vspace-bpall-medium">
+									<div class="line-item___CuYpz line-item__border-redesign___NVQBn" data-auto-id="glass-cart-line-item">
+										<div class="no-gutters col-s-5 line-item__image-sizing-wrapper___3UF5T">
+											<a href="P1 - detalhe.html">
+												<img src="logo.jpg" width="250" alt="Tênis Adizero Adios Pro 2.0" data-auto-id="glass-cart-line-item-image">
+											</a>
+										</div>
+										<div class="line-item__details-wrapper___3UXdu col-s-7 col-m-7 col-l-12 offset-l-1 no-gutters">
+											<div class="line-item__details-row___3gdud row">
+												<div class="line-item__details___3nxqI">
+													<div>
+														<div class="row">
+															<div class="line-item__title-row___28iYF">
+																<a href="P1 - detalhe.html" class="line-item__title___2mQl2">
+																	<span data-auto-id="glass-cart-line-item-name">Item 01</span>
+																</a>
+															</div>
+														</div>
+														<div class="row">
+															<div class="line-item__attribute___1kix5 line-item__attribute--color___HYisB">
+																<span data-auto-id="cart-line-item-attribute-color" class="">aadasdfafasfeafsfgfvbfsd</span>
+															</div>
+														</div>
+														<div data-auto-id="glass-cart-line-item-attributes" class="gl-vspace">
+															<div class="line-item__inline-attributes">
+																<div class="line-item__attribute___1kix5">
+																	<span class="line-item__attribute__title___3_W74">Tamanho: </span>
+																	<span data-auto-id="cart-line-item-attribute-size" class="">35</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="line-item__action-container___1Jwjv">
+														<button type="button" class="gl-cta gl-cta--icon gl-cta--no-border" data-auto-id="glass-cart-line-item-delete" aria-label="wishlist.remove">
+															<span title="" class="gl-icon__wrapper" role="img">
+																<svg class="gl-icon gl-cta__icon gl-cta__icon--standalone">
+																	<use xlink:href="#cross-small"></use>
+																</svg>
+															</span>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="line-item__footer___1nR12 row gl-align-items-center">
+												<div data-auto-id="glass-cart-line-item-price" class="gl-hidden-m">
+													<div class="gl-price gl-price--horizontal notranslate" data-auto-id="gl-price-item">
+														<div class="gl-price-item gl-price-item--crossed notranslate">R$1.699,99</div>
+														<div class="gl-price-item gl-price-item--sale notranslate">R$1.399,99</div>
+													</div>
+												</div>
+												<div class="dropdown-container___eXy6g">
+													<span data-auto-id="glass-cart-line-item-quantity" class="qty-label___26dQ1">Quantidade:</span>
+													<div class="gl-form-item">
+														<div class="gl-dropdown-native gl-dropdown-native--small" data-auto-id="dropdown-container" labelautoid="glass-cart-line-item-quantity-dropdown-label" optionsautoid="glass-cart-line-item-quantity-dropdown-options" labelprops="[object Object]">
+															<div class="gl-dropdown-native__select">
+																<span class="gl-dropdown-native__select-label">
+																	<span class="gl-dropdown-native__select-label-text">1</span>
+																</span>
+																<span title="" class="gl-icon__wrapper" role="img">
+																	<svg class="gl-icon gl-dropdown-native__select-icon">
+																		<use xlink:href="#dropdown"></use>
+																	</svg>
+																</span>
+															</div>
+															<select class="gl-dropdown-native__select-element">
+																<option></option>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+																<option>5</option>
+																<option>6</option>
+																<option>7</option>
+																<option>8</option>
+																<option>9</option>
+																<option>10</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+						<div class="row border border-dark mt-4 mb-0">
+							<div class="col-7 col-sm-4 col-md-5 p-0">
+								<a href="P1 - detalhe.html">
+									<img class="" src="logo.jpg" width="200" />
+								</a>
+							</div>
+							<div class="col-5 col-sm-8 col-md-7">
+								<div>
+									<div class="row">
+										<div class="line-item__title-row___28iYF">
+											<a href="P1 - detalhe.html" class="line-item__title___2mQl2">
+												<span data-auto-id="glass-cart-line-item-name">Item 01</span>
+											</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="line-item__attribute___1kix5 line-item__attribute--color___HYisB">
+											<span data-auto-id="cart-line-item-attribute-color" class="">aadasdfafasfeafsfg fvbfsd</span>
+										</div>
+									</div>
+									<div data-auto-id="glass-cart-line-item-attributes" class="gl-vspace">
+										<div class="line-item__inline-attributes">
+											<div class="line-item__attribute___1kix5">
+												<span class="line-item__attribute__title___3_W74">Tamanho: </span>
+												<span data-auto-id="cart-line-item-attribute-size" class="">35</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="line-item__footer___1nR12 row gl-align-items-center">
+									<div data-auto-id="glass-cart-line-item-price" class="gl-hidden-m">
+										<div class="gl-price gl-price--horizontal notranslate" data-auto-id="gl-price-item">
+											<div class="gl-price-item gl-price-item--sale notranslate">R$1.399,99</div>
+										</div>
+									</div>
+									<div class="dropdown-container___eXy6g">
+										<span data-auto-id="glass-cart-line-item-quantity" class="qty-label___26dQ1">Quantidade:</span>
+										<div class="gl-form-item">
+											<div class="gl-dropdown-native gl-dropdown-native--small" data-auto-id="dropdown-container" labelautoid="glass-cart-line-item-quantity-dropdown-label" optionsautoid="glass-cart-line-item-quantity-dropdown-options" labelprops="[object Object]">
+												<select class="gl-dropdown-native__select-element">
+													<!-- <option></option> -->
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>6</option>
+													<option>7</option>
+													<option>8</option>
+													<option>9</option>
+													<option>10</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row border border-dark mt-4 mb-0">
+							<div class="col-7 col-sm-4 col-md-5 p-0">
+								<a href="P1 - detalhe.html">
+									<img class="" src="logo.jpg" width="200" />
+								</a>
+							</div>
+							<div class="col-5 col-sm-8 col-md-7">
+								<div>
+									<div class="row">
+										<div class="line-item__title-row___28iYF">
+											<a href="P1 - detalhe.html" class="line-item__title___2mQl2">
+												<span data-auto-id="glass-cart-line-item-name">Item 01</span>
+											</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="line-item__attribute___1kix5 line-item__attribute--color___HYisB">
+											<span data-auto-id="cart-line-item-attribute-color" class="">aadasdfafasfeafsfg fvbfsd</span>
+										</div>
+									</div>
+									<div data-auto-id="glass-cart-line-item-attributes" class="gl-vspace">
+										<div class="line-item__inline-attributes">
+											<div class="line-item__attribute___1kix5">
+												<span class="line-item__attribute__title___3_W74">Tamanho: </span>
+												<span data-auto-id="cart-line-item-attribute-size" class="">35</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="line-item__footer___1nR12 row gl-align-items-center">
+									<div data-auto-id="glass-cart-line-item-price" class="gl-hidden-m">
+										<div class="gl-price gl-price--horizontal notranslate" data-auto-id="gl-price-item">
+											<div class="gl-price-item gl-price-item--sale notranslate">R$1.399,99</div>
+										</div>
+									</div>
+									<div class="dropdown-container___eXy6g">
+										<span data-auto-id="glass-cart-line-item-quantity" class="qty-label___26dQ1">Quantidade:</span>
+										<div class="gl-form-item">
+											<div class="gl-dropdown-native gl-dropdown-native--small" data-auto-id="dropdown-container" labelautoid="glass-cart-line-item-quantity-dropdown-label" optionsautoid="glass-cart-line-item-quantity-dropdown-options" labelprops="[object Object]">
+												<select class="gl-dropdown-native__select-element">
+													<!-- <option></option> -->
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>6</option>
+													<option>7</option>
+													<option>8</option>
+													<option>9</option>
+													<option>10</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row border border-dark mt-4 mb-0">
+							<div class="col-7 col-sm-4 col-md-5 p-0">
+								<a href="P1 - detalhe.html">
+									<img class="" src="logo.jpg" width="200" />
+								</a>
+							</div>
+							<div class="col-5 col-sm-8 col-md-7">
+								<div>
+									<div class="row">
+										<div class="line-item__title-row___28iYF">
+											<a href="P1 - detalhe.html" class="line-item__title___2mQl2">
+												<span data-auto-id="glass-cart-line-item-name">Item 01</span>
+											</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="line-item__attribute___1kix5 line-item__attribute--color___HYisB">
+											<span data-auto-id="cart-line-item-attribute-color" class="">aadasdfafasfeafsfg fvbfsd</span>
+										</div>
+									</div>
+									<div data-auto-id="glass-cart-line-item-attributes" class="gl-vspace">
+										<div class="line-item__inline-attributes">
+											<div class="line-item__attribute___1kix5">
+												<span class="line-item__attribute__title___3_W74">Tamanho: </span>
+												<span data-auto-id="cart-line-item-attribute-size" class="">35</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="line-item__footer___1nR12 row gl-align-items-center">
+									<div data-auto-id="glass-cart-line-item-price" class="gl-hidden-m">
+										<div class="gl-price gl-price--horizontal notranslate" data-auto-id="gl-price-item">
+											<div class="gl-price-item gl-price-item--sale notranslate">R$1.399,99</div>
+										</div>
+									</div>
+									<div class="dropdown-container___eXy6g">
+										<span data-auto-id="glass-cart-line-item-quantity" class="qty-label___26dQ1">Quantidade:</span>
+										<div class="gl-form-item">
+											<div class="gl-dropdown-native gl-dropdown-native--small" data-auto-id="dropdown-container" labelautoid="glass-cart-line-item-quantity-dropdown-label" optionsautoid="glass-cart-line-item-quantity-dropdown-options" labelprops="[object Object]">
+												<select class="gl-dropdown-native__select-element">
+													<!-- <option></option> -->
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>6</option>
+													<option>7</option>
+													<option>8</option>
+													<option>9</option>
+													<option>10</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row border border-dark mt-4 mb-0">
+							<div class="col-7 col-sm-4 col-md-5 p-0">
+								<a href="P1 - detalhe.html">
+									<img class="" src="logo.jpg" width="200" />
+								</a>
+							</div>
+							<div class="col-5 col-sm-8 col-md-7">
+								<div>
+									<div class="row">
+										<div class="line-item__title-row___28iYF">
+											<a href="P1 - detalhe.html" class="line-item__title___2mQl2">
+												<span data-auto-id="glass-cart-line-item-name">Item 01</span>
+											</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="line-item__attribute___1kix5 line-item__attribute--color___HYisB">
+											<span data-auto-id="cart-line-item-attribute-color" class="">aadasdfafasfeafsfg fvbfsd</span>
+										</div>
+									</div>
+									<div data-auto-id="glass-cart-line-item-attributes" class="gl-vspace">
+										<div class="line-item__inline-attributes">
+											<div class="line-item__attribute___1kix5">
+												<span class="line-item__attribute__title___3_W74">Tamanho: </span>
+												<span data-auto-id="cart-line-item-attribute-size" class="">35</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="line-item__footer___1nR12 row gl-align-items-center">
+									<div data-auto-id="glass-cart-line-item-price" class="gl-hidden-m">
+										<div class="gl-price gl-price--horizontal notranslate" data-auto-id="gl-price-item">
+											<div class="gl-price-item gl-price-item--sale notranslate">R$1.399,99</div>
+										</div>
+									</div>
+									<div class="dropdown-container___eXy6g">
+										<span data-auto-id="glass-cart-line-item-quantity" class="qty-label___26dQ1">Quantidade:</span>
+										<div class="gl-form-item">
+											<div class="gl-dropdown-native gl-dropdown-native--small" data-auto-id="dropdown-container" labelautoid="glass-cart-line-item-quantity-dropdown-label" optionsautoid="glass-cart-line-item-quantity-dropdown-options" labelprops="[object Object]">
+												<select class="gl-dropdown-native__select-element">
+													<!-- <option></option> -->
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>6</option>
+													<option>7</option>
+													<option>8</option>
+													<option>9</option>
+													<option>10</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="border border-dark">
+							<img class="" src="logo.jpg" width="200" />
+						</div>
+						<br> -->
+						<!-- <div class="border border-dark">
+							<img class="" src="logo.jpg" width="200" />
+						</div>
+						<br> -->
+						<!-- <div class="border border-dark">
+							<img class="" src="logo.jpg" width="200" />
+						</div>
+						<br> -->
+					</aside>
+					<article class="col-12 col-md-4 pt-2" id="dados-produto">
+						<button id="final" class="col-12 col-sm-12 btn bg-dark text-light">FINALIZAR</button>
+						<br><br><br>
+						<h4 class="col-12 col-sm-12 mt-5">RESUMO DO PEDIDO</h4>
+						<br>
+						<table>
+							<tr>
+								<td class="col-6 col-sm-7">4 PRODUTOS</td>
+								<td class="col-6 col-sm-5"><div class="valores">R$ 3000,00</div></td>
+							</tr>
+							<tr>
+								<td class="col-6 col-sm-7">TOTAL</td>
+								<td class="col-6 col-sm-5"><div class="valores">R$ 3000,00</div></td>
+							</tr>
+						</table>
+						<button id="final2" class="col-12 col-sm-12 btn bg-dark text-light">FINALIZAR</button>
+					</article>
+				</div>
+			</section>
+			<!-- <section id="compra">
+				<h2>SEU CARRINHO</h2>
+				<br>
+				<table>
+					<thead style="background-color: #D3D3D3;">
+						<tr id="l1">
+							<th class="produtos">Produtos</th>
+							<th class="qt">Quantidade</th>
+							<th class="valor">Valor</th>
+							<th class="vl-total">Valor Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="produtos">
+								<section>
+									<aside class="foto">
+										<img class="imagem" src="logo.jpg" alt="Card image" width="80">
+									</aside>
+									<article class="dados-produto">
+										<b>Item 1</b>
+									</article>
+								</section>
+							</td>
+							<td class="qt">1</td>
+							<td class="valor">R$ 10,00</td>
+							<td class="vl-total">R$ 10,00</td>
+						</tr>
+						<tr>
+							<td class="produtos">
+								<section>
+									<aside class="foto">
+										<img class="imagem" src="logo.jpg" alt="Card image" width="80">
+									</aside>
+									<article class="dados-produto">
+										<b>Item 2</b>
+									</article>
+								</section>
+							</td>
+							<td class="qt">2</td>
+							<td class="valor">R$ 10,00</td>
+							<td class="vl-total">R$ 20,00</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td class="produtos">
+							</td>
+							<td class="qt"></td>
+							<td class="valor"><b>TOTAL</b></td>
+							<td class="vl-total">R$ 30,00</td>
+						</tr>
+					</tfoot>
+				</table>
+				<button class="btn bg-dark text-light">FINALIZAR</button> <button class="btn bg-dark text-light">LIMPAR CARRINHO</button>
+			</section> -->
+			<!----RODAPE-->
+			<footer>
+				<div class="container-fluid container-rodape footer-inner-space pt-5 mb-0 bg-dark">
+					<!-- <div class="container-fluid ms-0"> -->
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 col-sm-12 col-md-6 mb-4 mb-md-0">
+											<h5>Navegação</h5>
+											<ul class="list-group list-unstyled">
+												<li><a href="#">Home</a></li>
+												<li><a href="#">Contato</a></li>
+												<li><a href="#">Blog</a></li>
+												<li><a href="#">Login</a></li>
+											</ul>
+										</div>
+										<div class="col-12 col-sm-12 col-md-6 mb-4 mb-md-0">
+											<h5>Blog</h5>
+											<ul class="list-unstyled">
+												<li><a href="#">Os melhores animes de 2022</a></li>
+												<li><a href="#">Quem é mais forte Naruto ou Sasuke?</a></li>
+												<li><a href="#">AnimeFriends 2022</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 col-sm-12 col-md-6 mb-4 mb-md-0">
+											<h5>Contato</h5>
+											<ul class="list-group list-unstyled p-0 m-0">
+												<li><i class="fa-solid fa-envelope pe-2"></i><a href="#">contato@site.com.br</a></li>
+												<li><i class="fa-solid fa-phone-flip pe-2"></i><a href="#">(11) 0000-0000</a></li>
+												<li><i class="fa-solid fa-headphones pe-2"></i><a href="#">Fale Conosco</a></li>
+											</ul>
+											<br>
+										</div>
+										<div class="col-12 col-sm-12 col-md-6 mb-4 mb-md-0">
+											<h5>Redes Sociais</h5>
+											<ul class="list-unstyled">
+												<li><i class="fa-brands fa-facebook fa-2x"></i></li>
+												<li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
+												<li><i class="fa-brands fa-linkedin fa-2x"></i></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-12 mt-2">
+								<!-- <p><a href="#">Rua das Flores, São Paulo - SP, 00000-000</a></p> -->
+								<div class="border-top mt-3 mb-2"></div>
+							</div>
+							<div class="col-md-6">
+								<p class="text-white"><small>GEEK &copy; - 2022 | Todos os direitos reservados. CNPJ: 00.000.000/0000-00 Rua das Flores, São Paulo - SP, 00000-000 </small></p>
+							</div>
+							<div class="col-md-6">
+		
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

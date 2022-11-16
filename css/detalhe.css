@@ -1,0 +1,167 @@
+#comprar{
+	background-color: black;
+	color: white;
+	border: solid 0.5px black;
+	width: 200px;
+	height: 50px;	
+	border-radius: 10px;
+	font-weight: bold;
+	margin: 2%;
+}
+
+#produto{
+	margin-top: 100px;
+	display: -webkit-flex;
+	display: flex;
+	height: 80vh;
+}
+
+#relacionados{
+	margin-top: 100px;
+	display: -webkit-flex;
+	display: flex;
+	height: 90vh;
+}
+  
+/* Style the navigation menu */
+aside {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 20px;
+}
+  
+/* Style the list inside the menu */
+aside img {
+	list-style-type: none;
+	padding: 0;
+}
+  
+/* Style the content */
+article {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	padding: 10px;
+	font-size: 20px;
+}
+
+article h1{
+	font-size: 30px;
+}
+
+footer {
+	text-align: left;
+	color: white;
+}
+
+.imagem{
+	width: 98%;
+}
+  
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+	#produto {
+	  	-webkit-flex-direction: column;
+	  	flex-direction: column;
+		height: 200vh;
+	}
+	aside{
+		text-align: center;
+		/* padding: 0%; */
+	}
+	#comprar{
+		width: 95%;
+	}
+}
+
+@media (max-width: 900px) and (min-width: 770px){
+	#produto {
+		height: 110vh;
+	}
+}
+
+@media (max-width: 770px) and (min-width: 700px){
+	#produto {
+		height: 130vh;
+	}
+}
+
+@media (max-width: 700px) and (min-width: 650px){
+	#produto {
+		height: 150vh;
+	}
+}
+
+@media (max-width: 650px) and (min-width: 600px){
+	#produto {
+		height: 180vh;
+	}
+}
+
+@media (max-width: 400px){
+	#produto {
+		height: 220vh;
+	}
+}
+
+@media (max-width: 350px){
+	#produto {
+		height: 250vh;
+	}
+}
+
+@media (max-width: 250px){
+	#produto {
+		height: 350vh;
+	}
+}
+
+@media (max-width: 200px){
+	#produto {
+		height: 450vh;
+	}
+}
+
+@media (max-width: 150px){
+	#produto {
+		height: 500vh;
+	}
+}
+
+
+/* 12345 */
+
+/* @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+} */
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}

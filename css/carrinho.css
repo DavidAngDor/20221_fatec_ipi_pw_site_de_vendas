@@ -1,0 +1,128 @@
+section{
+	margin-top: 110px;
+	/* padding-left: 2.5%; */
+}
+
+/* #compra{
+	width: 92%;
+	display: inline-table;
+	padding: 4%;
+} */
+
+/* section {
+	display: -webkit-flex;
+	display: flex;
+} */
+
+h2{
+	margin-bottom: 30px;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td{
+	border-top: 1px solid;
+}
+
+thead{
+	background-color: #D3D3D3 !important;
+}
+
+th{
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+td{
+	padding: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.valores{
+	text-align: right;
+	padding-right: 2%;
+}
+
+/* .produtos{
+	text-align: left;
+	padding-left: 10px;
+} */
+
+.qt{
+	text-align: center;
+}
+
+.valor{
+	text-align: center;
+}
+
+.vl-total{
+	text-align: center;
+	background-color: #F5F5F5;
+}
+
+thead .vl-total{
+	background-color: #D3D3D3 !important;
+}
+
+/* aside {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 2px;
+} */
+  
+/* Style the list inside the menu */
+/* aside img {
+	margin-top: 0%;
+} */
+  
+/* Style the content */
+/* article {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	padding: 10px;
+	font-size: 18px;
+} */
+
+section button{
+	width: 200px;
+	height: 40px;
+	background-color: black;
+	color: white;
+	border: solid 5px black;
+	border-radius: 4px;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: 5vh;
+	margin-bottom: 0px;
+	float: right;
+}
+
+#final2{
+	display: none;
+}
+
+footer{
+	color: white;
+}
+
+@media (max-width: 768px) {
+	section{
+		margin-top: 140px;
+		/* height: 100vh; */
+		margin-bottom: 10vh;
+	}
+	#final{
+		display: none;
+	}
+	#final2{
+		display: inline;
+	}
+}
